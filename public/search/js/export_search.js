@@ -27,7 +27,7 @@ export class search{
           })
             .then((data) => data.json())
             .then((data) => {
-              //console.log("Success:", data);
+              console.log("Success:", data);
               this.Showlist(data, valor);
             })
             .catch(function (error) {
@@ -64,13 +64,13 @@ export class search{
   Show_list_each_data(arrayp,valor,n){
     for (let item of arrayp) {
         n++;
-        let nombre = item.name;
+        let nombre = item.nombre;
 	      //console.log(nombre)
         this.ul_add_li.innerHTML +=`
         <li id="${n+this.idli}" value="${item.nombre}" class="list-group-item"  style="">
                 <div class="d-flex flex-row " style="">
                 <div class="p-2 text-center divimg" style="">
-                    <img src="/images/${item.image}" class="img-thumbnail" width="50" height="50" >
+                    <img src="/images/${item.imagen}" class="img-thumbnail" width="50" height="50" >
                 </div>
                 <div class="p-2">
                         <strong>${nombre.substr(0,valor.length)}</strong>

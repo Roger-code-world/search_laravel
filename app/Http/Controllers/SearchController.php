@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Response;
-use DB;
+use Illuminate\Support\Facades\Response;
+use Illuminate\Support\Facades\DB;
 
 class SearchController extends Controller
 {
@@ -12,8 +12,8 @@ class SearchController extends Controller
     {
         $data = trim($request->valor);
 
-        $result = DB::table('products')
-        ->where('name','like','%'.$data.'%')
+        $result = DB::table('productos')
+        ->where('nombre','like','%'.$data.'%')
         ->orwhere('barcode','like','%'.$data.'%')
         ->limit(5)
         ->get();
