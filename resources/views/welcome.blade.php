@@ -16,19 +16,8 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <div class="container py-5">
             <div class="card">
-                <h5 class="card-header bg-secondary text-white">Buscar informacion de la base de datos en tiempo real con laravel 8 y JavaScript</h5>
+                <h5 class="card-header bg-secondary text-white">Buscar informacion de la base de datos en tiempo real con laravel 9 y JavaScript</h5>
                 <div class="card-body">
-                    <!--<div class="container">
-                        <div class="row">
-                            <div class="col-md-7">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="mysearch" placeholder="Search products">
-                                    <ul id="showlist" tabindex='1' class="list-group"></ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>-->
-
                     <div class="container">
                         <div class="row height d-flex justify-content-center align-items-center">
                             <div class="col-md-8">
