@@ -75,7 +75,7 @@ export class search{
                 <div class="p-2">
                         <strong>${nombre.substr(0,valor.length)}</strong>
                         ${nombre.substr(valor.length)}
-                        <p class="card-text">P. venta $ : ${item.purchase_price}</p>
+                        <p class="card-text">P. venta $ : ${item.precio_venta}</p>
                 </div>
                 </div>
         </li>
